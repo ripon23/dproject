@@ -5,6 +5,8 @@
 | Menu
 |--------------------------------------------------------------------------
 */
+$lang['select_relationship_with_gatekeeper'] = 'Select relationship with gatekeeper';
+
 $lang['view_aponjon_member_list'] = 'Aponjon Member List';
 $lang['menu_aponjon_register'] = 'Aponjon Registration';
 

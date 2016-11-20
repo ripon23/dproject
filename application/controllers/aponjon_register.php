@@ -1,5 +1,4 @@
 <?php
-
 class Aponjon_register extends CI_Controller {
 
 	function __construct()
@@ -69,17 +68,7 @@ class Aponjon_register extends CI_Controller {
 		// Run form validation
 		if ($this->form_validation->run())
 		{			
-			// Load email library
-			//$this->load->library('email');
-
 			
-			//$email_setting  = array('mailtype'=>'html');
-			//$this->email->initialize($email_setting);
-			
-			/*$config['charset'] = 'utf-8';
-			$config['wordwrap'] = TRUE;
-			$config['mailtype'] = 'html';
-			$this->email->initialize($config);*/
 	
 			if ( ! ($this->session->userdata('sign_up_recaptcha_pass') == TRUE || $recaptcha_result === TRUE))
 			{
@@ -90,25 +79,7 @@ class Aponjon_register extends CI_Controller {
 				
 			// Remove recaptcha pass
 			$this->session->unset_userdata('sign_up_recaptcha_pass');
-			// Send reset password email
-			/*$this->email->from($this->input->post('email', TRUE));
-			$this->email->reply_to($this->input->post('email', TRUE));
-			$this->email->to('riponmailbox@gmail.com');
-			$this->email->subject($this->input->post('subject', TRUE));
-			$this->email->message($this->load->view('email/contact_us_email', array(
-				'name' => $this->input->post('name', TRUE),
-				'message' => $this->input->post('message', TRUE)), TRUE));			
-			if($this->email->send())
-			{
-				$data['success'] = 'success';
-				$this->load->view('aponjon_register', isset($data) ? $data : NULL);
-			}
-			else
-			{
-				$data['error'] = 'error';
-				$this->load->view('aponjon_register', isset($data) ? $data : NULL);
-			}
-			return;*/
+			
 			$table_data=array(
 						'subscriber_type'=>$this->input->post('subscriber_type'),
 						'name'=>$this->input->post('name'),
@@ -124,17 +95,13 @@ class Aponjon_register extends CI_Controller {
 			if($success_or_fail)
 					$data['success_msg']="Register successfully";
 				else
-					$data['error_msg']="Registration Unsuccessfull";
-					
-			//$data['recaptcha'] = $this->recaptcha->load($recaptcha_result, $this->config->item("ssl_enabled"));
-			//$this->load->view('aponjon_register', isset($data) ? $data : NULL);		
+					$data['error_msg']="Registration Unsuccessfull";				
 			}
 		}
-		//else
-		//{
+
 		$data['recaptcha'] = $this->recaptcha->load($recaptcha_result, $this->config->item("ssl_enabled"));
 		$this->load->view('aponjon_register', isset($data) ? $data : NULL);	
-		//}
+
 		
 		
 	}
@@ -221,4 +188,4 @@ class Aponjon_register extends CI_Controller {
 
 
 /* End of file home.php */
-/* Location: ./system/application/controllers/home.php */
+/* Location: ./system/application/controllers/aponjon_registre.php */

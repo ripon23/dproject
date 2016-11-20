@@ -9,7 +9,8 @@ $lang['menu_aponjon_register'] = 'আপাজন নিবন্ধন';
 $lang['view_aponjon_member_list'] = 'আপাজন সদস্য তালিকা';
 
 $lang['button_register']='নিবন্ধন';
-	  
+$lang['select_relationship_with_gatekeeper'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক নির্বাচন';
+
 $lang['relationship_with_gatekeeper'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক';
 $lang['relationship_with_gatekeeper_placeholder'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক';
 
