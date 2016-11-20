@@ -116,7 +116,7 @@ $config['subclass_prefix'] = 'MY_';
 
 
 
-$config['pagination_perpage'] = 10;
+$config['pagination_perpage'] = 5;
 
 $config['admin_role_id'] = 1;
 $config['director_general_role_id'] = 2;

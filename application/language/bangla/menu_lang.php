@@ -5,6 +5,9 @@
 | Menu
 |--------------------------------------------------------------------------
 */
+$lang['menu_aponjon_register'] = 'আপাজন নিবন্ধন';
+$lang['view_aponjon_member_list'] = 'আপাজন সদস্য তালিকা';
+
 $lang['button_register']='নিবন্ধন';
 	  
 $lang['relationship_with_gatekeeper'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক';
@@ -20,7 +23,7 @@ $lang['cell_no'] = 'মোবাইল নম্বর';
 $lang['cell_no_placeholder'] = 'মোবাইল নম্বর';
 
 $lang['subscriber_type'] = 'গ্রাহকের ধরণ';
-$lang['menu_aponjon_register'] = 'আপাজন নিবন্ধন';
+
 $lang['select_subscriber_type'] = 'গ্রাহকের ধরণ নির্বাচন';
 
 $lang['menu_salary_report'] = 'বেতন প্রতিবেদন';

@@ -22,18 +22,18 @@
 <div class="well well-lg" style="overflow:hidden;">
 
 <?php
-if($this->authorization->is_permitted('manage_region'))
+if($this->authorization->is_permitted('view_aponjon_member'))
 {
 ?> 
 <div class="col-md-4">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h3 class="panel-title"><?=lang('menu_region_management')?></h3>
+        <h3 class="panel-title"><?=lang('menu_aponjon_register')?></h3>
       </div>
       <div class="panel-body">
         <ul class="list-unstyled">
-        	<li><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <a href="./region/region/create_region"><?=lang('action_create')?> <?=lang('menu_region')?> </a></li>
-        	<li><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <a href="./region/region/region_list"><?=lang('action_view')?> <?=lang('menu_region')?> </a></li>
+        	<li><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <a href="./aponjon_register/view_data/"><?=lang('view_aponjon_member_list')?> </a></li>
+        	<li>&nbsp;</li>
             <li>&nbsp;</li>
         </ul>       
         

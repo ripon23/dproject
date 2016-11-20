@@ -5,6 +5,8 @@
 | Menu
 |--------------------------------------------------------------------------
 */
+$lang['view_aponjon_member_list'] = 'Aponjon Member List';
+$lang['menu_aponjon_register'] = 'Aponjon Registration';
 
 $lang['button_register']='Register';
 
@@ -89,7 +91,7 @@ $lang['menu_news'] = 'News';
 $lang['menu_news_list'] = 'News List';
 $lang['menu_news_add'] = 'Add News';
 $lang['menu_photo_gallery'] = 'Photo Gallery';
-$lang['menu_aponjon_register'] = 'Aponjon Registration';
+
 $lang['menu_gallery_mangement'] = 'Gallery Management';
 $lang['menu_gallery_list'] = 'Gallery List';
 $lang['menu_gallery_add'] = 'Add Gallery';

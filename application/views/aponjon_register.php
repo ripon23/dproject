@@ -12,14 +12,14 @@
 		<?php if (isset($error_msg)):?>
         <div class="alert alert-warning">
         	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        	<span class="glyphicon glyphicon-alert"></span><strong>  <?php echo "Error: ".$error_msg?> </strong>
+        	<span class="glyphicon glyphicon-alert"></span><strong>  <?php echo "".$error_msg?> </strong>
         </div>
         <?php endif;?>
         
     	<?php if (isset($success_msg)):?>
         <div class="alert alert-success">
         	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        	<strong><span class="glyphicon glyphicon-saved"></span> <?php echo "Success: ".$success_msg?> </strong>
+        	<strong><span class="glyphicon glyphicon-saved"></span> <?php echo "".$success_msg?> </strong>
         </div>                	  
         <?php endif;?>                            
             
@@ -35,8 +35,8 @@
         <div class="input-group">
           <select name="subscriber_type" id="subscriber_type" class="form-control" >
                         <option value=""><?php echo lang('select_subscriber_type'); ?></option>
-                    	<option value="Pregnant Women">Pregnant Women</option>            
-                       	<option value="New Mother">New Mother</option>                                             
+                    	<option value="Pregnant Women" <?php if(set_value('subscriber_type')=="Pregnant Women") echo "selected";?> >Pregnant Women</option>            
+                       	<option value="New Mother" <?php if(set_value('subscriber_type')=="New Mother") echo "selected";?>>New Mother</option>                                             
 	      </select>
           <span class="input-group-addon"><i class="glyphicon form-control-feedback"><span style=" color:red; font-size:9px;">*</span></i></span></div>
           <?php if(form_error('subscriber_type')):?>
@@ -103,13 +103,12 @@
       </div>
       
       
-     <!-- <?php/* if (isset($recaptcha)) :
+      <?php if (isset($recaptcha)) :
 						echo $recaptcha;
-						if (isset($sign_up_recaptcha_error)) : */?>
-							<span class="field_error"><?php //echo $sign_up_recaptcha_error; ?></span>
-						<?php //endif; ?>
-	 <?php //endif; ?>
-      -->
+						if (isset($sign_up_recaptcha_error)) : ?>
+							<span class="field_error"><?php echo $sign_up_recaptcha_error; ?></span>
+						<?php endif; ?>
+	 <?php endif; ?>
       
       <!--<div class="form-group">
         <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
