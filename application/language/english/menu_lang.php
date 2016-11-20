@@ -5,6 +5,23 @@
 | Menu
 |--------------------------------------------------------------------------
 */
+
+$lang['button_register']='Register';
+
+$lang['relationship_with_gatekeeper'] = 'Relationship With Gatekeeper';
+$lang['relationship_with_gatekeeper_placeholder'] = 'Relationship With Gatekeeper';
+
+$lang['gatekeeper_cell_no'] = 'Gatekeeper Cell No';
+$lang['gatekeeper_cell_no_placeholder'] = 'Gatekeeper Cell No';
+
+$lang['select_services_model'] = 'Services Model';
+$lang['services_model'] = 'Services Model';
+
+$lang['cell_no'] = 'Cell No';
+$lang['cell_no_placeholder'] = 'Cell No';
+
+$lang['subscriber_type'] = 'Subscriber Type';
+$lang['select_subscriber_type'] = 'Select Subscriber Type';
 $lang['menu_salary_report'] = 'Salary Report';
 $lang['menu_staff_salary_bill'] = 'Staff Salary Bill';
 $lang['menu_salary_summary'] = 'Salary Summary';
@@ -72,6 +89,7 @@ $lang['menu_news'] = 'News';
 $lang['menu_news_list'] = 'News List';
 $lang['menu_news_add'] = 'Add News';
 $lang['menu_photo_gallery'] = 'Photo Gallery';
+$lang['menu_aponjon_register'] = 'Aponjon Registration';
 $lang['menu_gallery_mangement'] = 'Gallery Management';
 $lang['menu_gallery_list'] = 'Gallery List';
 $lang['menu_gallery_add'] = 'Add Gallery';

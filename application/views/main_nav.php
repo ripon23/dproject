@@ -31,6 +31,7 @@ $activeurl=$activeurl1."/".$activeurl2."/".$activeurl3;
         <li class="  <?php echo (isset($active) && $active=='about_us')? "active":""?>"><a href="<?php echo base_url();?>about_us"><?=lang('menu_about_us')?></a></li> 
         <li class="  <?php echo (isset($active) && $active=='contact_us')? "active":""?>"><a href="<?php echo base_url();?>contact_us"><?=lang('menu_contact_us')?></a></li>
         <li class="  <?php echo (isset($active) && $active=='gallery')? "active":""?>"><a href="<?php echo base_url();?>gallery"><?=lang('menu_photo_gallery')?></a></li> 
+      <li class="  <?php echo (isset($active) && $active=='aponjon')? "active":""?>"><a href="<?php echo base_url();?>aponjon_register"><?=lang('menu_aponjon_register')?></a></li>   
         
 		<?php if ($this->authentication->is_signed_in()) : ?>
         <li <?php echo $activeurl=='dashboard//'?' class="active"':'' ?>><a href="./dashboard"><?=lang('menu_dashboard')?></a></li>       

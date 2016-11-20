@@ -5,6 +5,24 @@
 | Menu
 |--------------------------------------------------------------------------
 */
+$lang['button_register']='নিবন্ধন';
+	  
+$lang['relationship_with_gatekeeper'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক';
+$lang['relationship_with_gatekeeper_placeholder'] = 'দ্বার রক্ষক সঙ্গে সম্পর্ক';
+
+$lang['gatekeeper_cell_no'] = 'দ্বাররক্ষী মোবাইল নম্বর';
+$lang['gatekeeper_cell_no_placeholder'] = 'দ্বাররক্ষী মোবাইল নম্বর';
+
+$lang['select_services_model'] = 'সার্ভিস মডেল';
+$lang['services_model'] = 'সার্ভিস মডেল';
+
+$lang['cell_no'] = 'মোবাইল নম্বর';
+$lang['cell_no_placeholder'] = 'মোবাইল নম্বর';
+
+$lang['subscriber_type'] = 'গ্রাহকের ধরণ';
+$lang['menu_aponjon_register'] = 'আপাজন নিবন্ধন';
+$lang['select_subscriber_type'] = 'গ্রাহকের ধরণ নির্বাচন';
+
 $lang['menu_salary_report'] = 'বেতন প্রতিবেদন';
 $lang['menu_staff_salary_bill'] = 'কর্মচারিদের বেতন বিল';
 $lang['menu_salary_summary'] = 'বেতন সারসংক্ষেপ';
